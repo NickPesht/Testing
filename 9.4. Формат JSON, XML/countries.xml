@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<countries>
+    <country id="rus01">
+        <nameEn>Russia</nameEn>
+        <nameRu>Россия</nameRu>
+        <alpha2Code>RU</alpha2Code>
+        <alpha3Code>RUS</alpha3Code>
+        <currencyNumber>643</currencyNumber>
+        <currencyCode>RUB</currencyCode>
+        <cities>
+            <city id="812">
+                <nameEn>Saint Petersburg</nameEn>
+                <nameRu>Санкт-Петербург</nameRu>
+                <population>5377503</population>
+            </city>
+            <city id="383">
+                <nameEn>Novosibirsk</nameEn>
+                <nameRu>Новосибирск</nameRu>
+                <population>1621330</population>
+            </city>
+            <city id="4012">
+                <nameEn>Kaliningrad</nameEn>
+                <nameRu>Калининград</nameRu>
+                <population>498260</population>
+            </city>
+        </cities>
+    </country>
+    <country id="hun02">
+        <nameEn>Hungary</nameEn>
+        <nameRu>Венгрия</nameRu>
+        <alpha2Code>HU</alpha2Code>
+        <alpha3Code>HUN</alpha3Code>
+        <currencyNumber>348</currencyNumber>
+        <currensyCode>HUF</currensyCode>
+        <cities>
+            <city id="361">
+                <nameEn>Budapest</nameEn>
+                <nameRu>Будапешт</nameRu>
+                <population>1723836</population>
+            </city>
+            <city id="3652">
+                <nameEn>Debrecen</nameEn>
+                <nameRu>Дебрецен</nameRu>
+                <population>201432</population>
+            </city>
+            <city id="3662">
+                <nameEn>Szeged</nameEn>
+                <nameRu>Сегед</nameRu>
+                <population>160766</population>
+            </city>
+        </cities>
+    </country>
+    <country id="nld03">
+        <nameEn>Netherlands</nameEn>
+        <nameRu>Нидерланды</nameRu>
+        <alpha2Code>NL</alpha2Code>
+        <alpha3Code>NLD</alpha3Code>
+        <currencyNumber>978</currencyNumber>
+        <currensyCode>EUR</currensyCode>
+        <cities>
+            <city id="3120">
+                <nameEn>Amsterdam</nameEn>
+                <nameRu>Амстердам</nameRu>
+                <population>869709</population>
+            </city>
+            <city id="3110">
+                <nameEn>Rotterdam</nameEn>
+                <nameRu>Роттердам</nameRu>
+                <population>617347</population>
+            </city>
+            <city id="3170">
+                <nameEn>Hague</nameEn>
+                <nameRu>Гаага</nameRu>
+                <population>515880</population>
+            </city>
+        </cities>
+    </country>
+    <country id="fra04">
+        <nameEn>France</nameEn>
+        <nameRu>Франция</nameRu>
+        <alpha2Code>FR</alpha2Code>
+        <alpha3Code>FRA</alpha3Code>
+        <currencyNumber>978</currencyNumber>
+        <currensyCode>EUR</currensyCode>
+        <cities>
+            <city id="331">
+                <nameEn>Paris</nameEn>
+                <nameRu>Париж</nameRu>
+                <population>2206488</population>
+            </city>
+            <city id="33491">
+                <nameEn>Marseilles</nameEn>
+                <nameRu>Марсель</nameRu>
+                <population>861635</population>
+            </city>
+            <city id="33437">
+                <nameEn>Lyon</nameEn>
+                <nameRu>Лион</nameRu>
+                <population>513275</population>
+            </city>
+        </cities>
+    </country>
+</countries>
