@@ -2,6 +2,7 @@
 Задача "Простые запросы".
 БД World, таблица City.
 */
+
 USE world;
 
 -- Вывести все строки, но только столбцы имя и дистрикт.
@@ -48,4 +49,4 @@ WHERE countryCode = 'RUS' AND population >= 1000000;
 
 SELECT * FROM city
 WHERE (countryCode = 'ESP' AND name LIKE 'A%')
-	OR (countryCode = 'GRC' AND population < 200000);
+    OR (countryCode = 'GRC' AND population < 200000);
