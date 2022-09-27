@@ -8,9 +8,9 @@ USE merchandising;
 SELECT CONCAT(lastName,' ', firstName,' ', middleName) AS siberianMerchandisers
 FROM merchandiser AS m
 LEFT JOIN city AS c
-	ON c.id = m.cityId
+    ON c.id = m.cityId
 LEFT JOIN region AS r
-ON r.id = c.regionId
+    ON r.id = c.regionId
 WHERE r.name = 'Сибирский';
 
 /*
@@ -28,7 +28,7 @@ WHERE comment IS NULL;
 SELECT c.name, COUNT(c.id) AS merchendisersCount
 FROM city AS c
 LEFT JOIN merchandiser AS m
-	ON m.cityId = c.id
+    ON m.cityId = c.id
 GROUP BY c.name;
 
 /*
@@ -39,9 +39,9 @@ GROUP BY c.name;
 SELECT r.name, COUNT(m.id) AS merchendisersCount
 FROM region AS r
 LEFT JOIN city AS c
-	ON c.regionId = r.id
+    ON c.regionId = r.id
 LEFT JOIN merchandiser AS m
-	ON m.cityId = c.id
+    ON m.cityId = c.id
 GROUP BY r.name;
 
 /*
@@ -51,20 +51,20 @@ GROUP BY r.name;
 
 SELECT m.id, m.firstName, m.lastName,
 SUM(
-	CASE 
-		WHEN pt.status = 1 THEN 1 
-        ELSE 0 
-	END
-) as inWork,
+    CASE 
+	WHEN pt.status = 1 THEN 1 
+	ELSE 0 
+    END
+) AS inWork,
 SUM(
-	CASE 
-		WHEN pt.status = 2 THEN 1 
-        ELSE 0 
-	END
-) as Posted
+    CASE 
+    WHEN pt.status = 2 THEN 1 
+    ELSE 0 
+END
+) AS Posted
 FROM merchandiser AS m
 LEFT JOIN placePosmTask AS pt 
-	ON m.id = pt.merchandiserId
+    ON m.id = pt.merchandiserId
 GROUP BY m.id, m.firstName, m.lastName;
 
 /*
