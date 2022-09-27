@@ -8,14 +8,14 @@ USE shoesShop;
 
 CREATE TABLE productCategory
 (
-	id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL UNIQUE
 );
 
 CREATE TABLE product
 (
-	id INT AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(100) NOT NULL,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
     model VARCHAR(25) NOT NULL UNIQUE,
     price MEDIUMINT NOT NULL,
     productCategoryId INT NOT NULL,
@@ -25,8 +25,8 @@ CREATE TABLE product
 
 INSERT INTO productCategory(name)
 VALUES 
-	('Ботинки мужские'), 
-	('Кеды All Star'), 
+    ('Ботинки мужские'), 
+    ('Кеды All Star'), 
     ('Кеды All Star Chuck Taylor'),
     ('Кроссовки мужские'), 
     ('Полуботинки мужские'), 
@@ -34,8 +34,8 @@ VALUES
 
 INSERT INTO product(name, model, price, productCategoryId, dateAdded)
 VALUES
-	('Ботинки мужские FRAZIER', 'FR22-23', 9800, 1, '2019-01-15'),
-	('Кеды Convers All Star летние низкие', 'M5039', 3600, 2, '2020-04-10'),
+    ('Ботинки мужские FRAZIER', 'FR22-23', 9800, 1, '2019-01-15'),
+    ('Кеды Convers All Star летние низкие', 'M5039', 3600, 2, '2020-04-10'),
     ('Кеды Converse All Star Chuck Taylor летние', 'M9160', 3900, 3, '2020-04-20'),
     ('Кроссовки мужские GREY', 'GR22-23', 8500, 4, '2021-05-05'),
     ('Кроссовки ECCO ZIPFLEX M', 'M803824', 12900, 5, '2021-05-23'),
@@ -44,14 +44,14 @@ VALUES
 -- Выведите список товаров, чтобы день, месяц и год выводились отдельными полями.
     
 SELECT Name, 
-	DAY(dateAdded) AS dayAdded, 
-	MONTH(dateAdded) AS monthAdded,
-	YEAR(dateAdded) AS yearAdded 
+    DAY(dateAdded) AS dayAdded, 
+    MONTH(dateAdded) AS monthAdded,
+    YEAR(dateAdded) AS yearAdded 
 FROM product; 
 
 -- Выведите сколько товаров было в каждый год, который присутствует в этой таблице.
 
 SELECT YEAR(dateAdded),
-	COUNT(*) AS productsCount
+COUNT(*) AS productsCount
 FROM product
 GROUP BY YEAR(dateAdded);
